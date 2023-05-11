@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Image Captioning App</title>
+</head>
+<body>
+    <form action='/generate-caption' enctype='multipart/form-data' method='post'>
+        <label for="n">Number of Captions</label> <input name="n" type="text" value="5" /> <br />
+        <label for="max_length">Maximum Caption Length</label> <input name="max_length" type="text" value="20" /> <br />
+        <label for="pre_condition">Begin Caption With (Optional: Leave Blank for un-conditional generation)</label> <input name="pre_condition" type="text" /> <br />
+        <label for="file">Image File</label> <input name='file' type='file' /> <br />
+        <input type='submit' />
+    </form>
+</body>
+</html>
+

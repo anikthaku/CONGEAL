@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Image Captioning App: Captions</title>
+    <style>
+        .bounding-box {
+            background-image: url("data:{{ img_type }};base64,{{ img }}");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+        <div class='bounding-box' style='width: 500px; height: 500px;'>
+        </div>
+    <h1>Top {{ n }} Captions</h1>
+    <ol>
+        {% for caption in captions %}
+        <li><h3>{{ caption }}</h3></li>
+        {% endfor %}
+    </ol>
+    <button onclick="window.location.href='/';">Get Caption On Another Image</button>
+</body>
+</html>
+

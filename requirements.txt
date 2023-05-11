@@ -1,0 +1,9 @@
+Pillow
+uvicorn
+fastapi
+opencv-python
+numpy
+python-multipart
+jinja2
+transformers
+torch
